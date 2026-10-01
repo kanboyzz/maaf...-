@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minta Maaf Ya...</title>
+  <link rel="stylesheet" href="oya.css">
+</head>
+<body>
+
+  <!-- ================= LOKASI FILE LAGU ================= -->
+  <!-- Ganti link src di bawah ini jika mau pakai lagu/mp3 sendiri -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=sweet-piano-112882.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Background Laut & Ornamen Mengapung -->
+  <div class="ocean-bg">
+    <div class="bubble" style="--l: 10%; --d: 6s; --s: 14px;"></div>
+    <div class="bubble" style="--l: 30%; --d: 8s; --s: 22px;"></div>
+    <div class="bubble" style="--l: 50%; --d: 5s; --s: 10px;"></div>
+    <div class="bubble" style="--l: 70%; --d: 9s; --s: 18px;"></div>
+    <div class="bubble" style="--l: 90%; --d: 7s; --s: 12px;"></div>
+    
+    <div class="sea-item" style="top: 12%; left: 8%;">🐟</div>
+    <div class="sea-item" style="top: 22%; right: 10%;">🐠</div>
+    <div class="sea-item" style="top: 60%; left: 12%;">🐙</div>
+    <div class="sea-item" style="top: 72%; right: 15%;">⭐</div>
+    <div class="sea-item" style="top: 85%; left: 80%;">🐚</div>
+  </div>
+
+  <!-- Pembungkus Utama -->
+  <div class="container">
+
+    <!-- SLIDE 1: Kucing dalam Kotak -->
+    <div class="card" id="card1">
+      <div class="sticker-container">
+        <!-- LOKASI STIKER 1 -->
+        <img src="ce6b426bf61d74722192f10e41d4d339.jpg" class="sticker" id="catSticker" alt="Stiker Kucing">
+      </div>
+      <button class="btn primary" id="btnStart">tap &gt;</button>
+    </div>
+
+    <!-- SLIDE 2: Pertanyaan Minta Maaf & Tombol Lari -->
+    <div class="card hidden" id="card2">
+      <div class="sticker-container">
+        <!-- LOKASI STIKER 2 -->
+        <img src="a05dc2defd8b0659a0b045ff8ce22bc7.jpg" class="sticker" alt="Stiker Minta Maaf">
+      </div>
+      <h2>akuuuu minta maaf ya... 🥺</h2>
+      <p>sering ninggalin kamuuu boboo lama banget, sama nonton bolaaaa... sayaaaang akuuu nak mintaa maaf...</p>
+      <div class="button-group">
+        <button class="btn primary" id="btnYes">iya, dimaafin</button>
+        <button class="btn secondary" id="btnNo">tak nak!!!</button>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Penyesalan -->
+    <div class="card hidden" id="card3">
+      <div class="sticker-container">
+        <!-- LOKASI STIKER 3 -->
+        <img src="8fadec803270ef9cd0ed17c502bfcb5a.jpg" class="sticker" alt="Stiker Sedih">
+      </div>
+      <p>sayaaaang maaf yaaa, aku masih kekanak-kanakannn, akuu menyesal... aku minta maaf 😕</p>
+      <button class="btn primary" id="btnForgive">open message from okanturu</button>
+    </div>
+
+    <!-- SLIDE 4: Surat Ketulusan -->
+    <div class="card hidden letter-card" id="card4">
+      <div class="letter-content">
+        <p>sayaaaaaaang, maaf yaaa hari ini aku ninggalin kamu seharian...<p>
+        <p>aku tadii pagi ke siang boboooo, malemnya malah nonton bolaaa... maaf ya sayaaang</p>
+        <p>akuuu beneran minta maaf bangeeett sayaaaang, maafin akuu yaaaa..</p>
+        <p>I really love about you ❤️</p>
+      </div>
+      <button class="btn primary" id="btnContinue">Lanjut</button>
+    </div>
+
+    <!-- SLIDE 5: Penutup & Ucapan Terima Kasih -->
+    <div class="card hidden" id="card5">
+      <div class="sticker-container">
+        <!-- LOKASI STIKER 5 -->
+        <img src="480ccf4f143c0be37f5e741b47e9de7e.jpg" class="sticker" alt="Stiker Senang">
+      </div>
+      <p>maacii ya udah mau nyempatin waktu buat baca pesan dari aku. terima kasih juga cipaaa sayaaang buat tiap senyuman kamu</p>
+      <button class="btn primary" id="btnReplay">reply</button>
+    </div>
+
+  </div>
+
+  <script src="nah.js"></script>
+</body>
+</html>
